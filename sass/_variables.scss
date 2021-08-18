@@ -1,0 +1,22 @@
+$c-primario-D: #daac00;
+$c-primario-L: #fcc302;
+$c-primario-LO: #fcc202bb;
+$c-secundario: #00bec9;
+$c-blanco: #fff;
+$c-negro: #343434;
+$c-gris: rgb(231, 231, 231);
+
+.c-p-D {
+    color: $c-primario-D;
+}
+.c-p-L {
+    color: $c-primario-L;
+}
+.c-s {
+    color: $c-secundario;
+    text-decoration: none;
+}
+.c-s:hover {
+        color: $c-secundario;
+        text-decoration: underline;
+}

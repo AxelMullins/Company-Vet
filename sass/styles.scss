@@ -1,0 +1,208 @@
+@import "variables", "reset";
+
+
+// NAV
+.navbar {
+    background-color: $c-primario-D;
+
+    .navbar-toggler:focus {
+        box-shadow: white 0 0 0 0.15rem;
+    }
+
+    .nav-link:focus {
+        color: $c-blanco;
+        font-weight: 600;
+    }
+
+    li a,
+    i {
+        color: $c-blanco;
+        font-size: 1.25em;
+
+        &:hover {
+            color: $c-gris;
+        }
+    }
+
+    form {
+        box-shadow: 3px 3px 10px 1px #0000002c;
+
+        input {
+            background-color: $c-primario-L;
+            border: none;
+            border-radius: 0;
+
+            &::placeholder {
+                color: $c-blanco;
+            }
+        }
+
+        button {
+            background-color: $c-secundario;
+            border-radius: 0;
+            border: none;
+        }
+    }
+}
+
+// Hero
+
+main {
+    .bg-primario {
+        background-color: $c-primario-L;
+    }
+
+    // btn
+    .btn-primario {
+        background-color: $c-primario-L;
+        color: $c-blanco;
+        border: none;
+    }
+
+    .btn-secundario {
+        background-color: $c-secundario;
+        color: $c-blanco;
+        border: none;
+    }
+
+    .btn-secundario-radius {
+        background-color: $c-secundario;
+        color: $c-blanco;
+        border: none;
+        border-radius: 2em;
+    }
+
+    .btn-outline-blanco {
+        color: $c-blanco;
+        border: $c-blanco 2px solid;
+    }
+
+    // :hover
+    .btn-primario:hover,
+    .btn-secundario:hover,
+    .btn-outline-blanco:hover,
+    .btn-secundario-radius:hover,
+    .redes:hover {
+        transform: scale(1.1);
+        color: $c-blanco;
+    }
+
+    // iframe
+    iframe {
+        filter: sepia(.7);
+        position: relative;
+        z-index: 6;
+    }
+    .box-orange-left {
+        background-color: $c-primario-L;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: -15px;
+        left: 0px;
+        z-index: 0;
+    }
+    .box-orange-right {
+        background-color: $c-primario-L;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: -15px;
+        right: 0px;
+        z-index: 0;
+    }
+
+    // Redes
+    .redes {
+        background-color: $c-primario-L;
+        color: $c-blanco;
+        font-size: 1.2em;
+        border-radius: 50%;
+        padding: .5em;
+    }
+
+    // background imagen - overlay
+    .bg-image {
+        background: url(../img/bg_xl.png);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $c-primario-LO;
+        margin: auto;
+    }
+}
+
+// FOOTER
+.footer {
+    background-color: $c-negro;
+
+    ul {
+        padding: 0;
+
+        li {
+            padding: .3em 0;
+        }
+    }
+
+    a,
+    i {
+        color: $c-blanco;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $c-primario-L;
+    }
+
+    form {
+        input {
+            background-color: $c-primario-L;
+            border: none;
+            border-radius: 0;
+
+            &::placeholder {
+                color: $c-blanco;
+            }
+        }
+
+        button {
+            background-color: $c-secundario;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+
+    .redes {
+        background-color: $c-blanco;
+        color: $c-negro;
+        font-size: 1.2em;
+        border-radius: 50%;
+        padding: .5em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    main {
+        .bg-image {
+            height: 150vh;
+            background-position: center;
+        }
+        .box-orange-left {
+            bottom: -10px;
+            left: 10px;
+        }
+        .box-orange-right {
+            bottom: -10px;
+            right: 10px;
+        }
+    }
+}
